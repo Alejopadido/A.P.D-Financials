@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+/* Color Palette */
+:root {
+    --main-color: #424242;
+    --sub-main-color: #dadadae3;
+    --secondary-color: #fcfc62;
+}
+/* Universal Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Joan', serif;
+}
+
+/* Elements Settings */
+header {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    font-size: 1.9rem;
+    background-color: var(--sub-main-color);
+}
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#banner {
+    background-image: url("/assets/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner .banner-text {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #a3a3a3a6;
+    font-size: 5rem;
+    color: var(--secondary-color);
+    text-shadow: 1px 2px var(--main-color);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+hr {
+    margin: 5rem 0;
+    width: 90%;
+    color: var(--sub-main-color);
+}
+h2 {
+    font-size: 3rem;
+}
+#services {
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#services .service {
+    width: 270px;
+    height: 320px;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+#services .service img {
+    width: 100%;
+    height: 55%;
+}
+#services .service h3, #team .team-member h3 {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+#services .service p, #team .team-member p {
+    margin: .5rem 0 2rem 1rem;
+    font-size: 1.5rem;
+}
+#services .service .get-started-button {
+    margin-left: 1rem; 
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    border: #424242 solid .1rem;
+}
+#team {
+    width: 90%;
+    padding: 5rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("/assets/banner.jpg");
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+#team .team-member {
+    width: 270px;
+    height: 320px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--sub-main-color);
+}
+#team .team-member img {
+    width: 100%;
+    height: 80%;
+}
+#contact {
+    background-color: #424242;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+#contact .contact-container {
+    background-color: #424242;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .contact-container .map {
+    width: 350px;
+    margin-top: 2rem;
+}
+#contact .contact-container .map img {
+    width: 100%;
+    height: 280px;
+}
+#contact .contact-container .contact-form {
+    align-self: flex-start;
+}
+#contact .contact-container .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contact form label {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+#contact form input {
+    width: 25rem;
+    height: 3rem;
+    padding: .8rem;
+}
+#contact form .submit-btn {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+}
+#contact .company-info {
+    width: 30rem;
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+}
+
+
